@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-
 import SimpleCard from "./components/SimpleCard.jsx";
 // Import SignupCard from its correct path
 import SignupCard from "./components/SignupCard.jsx";
-
 
 function App() {
   const [data, setData] = useState(null);
@@ -19,7 +17,6 @@ function App() {
       setData(response.data);
     });
   }, []);
-
 
   const [showSignup, setShowSignup] = useState(false);
 
@@ -37,7 +34,6 @@ function App() {
       )}
     </>
   );
-
 }
 
 export default App;
